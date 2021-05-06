@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 
 describe "Magazine App" do
   let(:article_title) { "Hello World" }

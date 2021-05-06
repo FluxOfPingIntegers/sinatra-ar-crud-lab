@@ -1,0 +1,11 @@
+  <h1>Article that matches this ID<h1>
+  <h3>Title: <%= @article.title %></h3>
+  <p>Content: <%= @article.content %></p>
+  
+  <br>
+
+  <h3>Delete this post?</h3>
+  <form method="post" action="/articles/<%= @article.id%>">
+    <input id="hidden" type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="submit">
+  </form>

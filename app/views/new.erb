@@ -1,0 +1,8 @@
+  <h1>Create a new Article</h1>
+  <form method="post" action="/articles/<%=Article.last.id + 1%>">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title">
+    <label for="content">Content:</label>
+    <input type="text" id="content" name="content">
+    <input type="submit" value="submit">
+  </form>
